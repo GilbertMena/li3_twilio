@@ -1,4 +1,4 @@
 li3_twilio
 ==========
 
-Lithium dataservice to allow for interation with twilio rest api.
+Lithium data source to allow for interation with twilio rest api.
