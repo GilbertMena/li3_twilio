@@ -132,11 +132,11 @@ class Twilio extends \lithium\data\source\Http {
 		if(!isset($options['to'])) throw new \ErrorException("No receiving (to) number passed to method\n
 			Please provide a recipient mobile number.");
 
-		if(!isset($options['message'])) throw new \ErrorException("No message defined\n
+		if(!isset($options['text'])) throw new \ErrorException("No message defined\n
 			Please provide the message content.");
 
 		
-		return $this->_client->account->{$this->_type}->create($options['from'], $options['to'], $options['message']);
+		return $this->_client->account->{$this->_type}->create($options['from'], $options['to'], $options['text']);
 
 	}
 
