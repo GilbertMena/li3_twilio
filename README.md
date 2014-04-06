@@ -33,7 +33,7 @@ Add wherever you wish to use the library:
 ##### Simple Usage for SMS
 
 ```
- $data = array('to'=>'3855555555','message'=>'Testing');
+ $data = array('to'=>'3855555555','text'=>'Testing');
  $twilio = Sms::init();
  $twilio->send($data);
 ```
