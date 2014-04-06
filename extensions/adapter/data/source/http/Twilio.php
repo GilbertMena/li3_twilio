@@ -21,6 +21,7 @@ class Twilio extends \lithium\data\source\Http {
 		'service' => 'lithium\net\http\Service',
 		'entity' => 'lithium\data\entity\Document',
 		'set' => 'lithium\data\collection\DocumentSet',
+        'schema' => 'lithium\data\DocumentSchema'
 	);
 
 	/**
@@ -29,7 +30,7 @@ class Twilio extends \lithium\data\source\Http {
 	 * @param array $config Configuration options.
 	 */
 	public function __construct(array $config = array()) {
-
+        
 		if (!in_array('curl', get_loaded_extensions())) {
 			throw new ErrorException("It looks like you do not have curl installed.\n" .
 					"Curl is required to make HTTP requests using the twilio-php\n" .
